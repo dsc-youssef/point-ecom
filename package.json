@@ -1,0 +1,35 @@
+{
+  "name": "point-ecom",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test:ts": "tsc -w",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest run --ui"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "@types/node": "18.15.13",
+    "@types/react": "18.0.37",
+    "@types/react-dom": "18.0.11",
+    "autoprefixer": "10.4.14",
+    "axios": "^1.3.6",
+    "next": "13.3.0",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.1",
+    "sass": "^1.62.0",
+    "tailwindcss": "3.3.1",
+    "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.30.1",
+    "@vitest/ui": "^0.30.1"
+  }
+}

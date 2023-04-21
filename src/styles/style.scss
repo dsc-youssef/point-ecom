@@ -1,0 +1,11 @@
+// Tailwind Config
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Main Config
+@import "./global/global";
+
+// Layouts
+@import "./website/website";
+@import "./dashboard/dashboard";
