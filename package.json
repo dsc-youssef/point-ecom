@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "tsc && next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "vitest test",
     "test:ts": "tsc -w",
     "test:coverage": "vitest run --coverage",
     "test:ui": "vitest run --ui"
