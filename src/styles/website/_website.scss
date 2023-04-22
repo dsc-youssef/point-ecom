@@ -1,11 +1,13 @@
-// Components
-@import "./components/header/header";
-@import "./components/footer/footer";
-@import "./components/brands/brands";
-@import "./components/bannerCard/bannerCard";
+.#{$website-prefix} {
+  // Components
+  @import "./components/header/header";
+  @import "./components/footer/footer";
+  @import "./components/brands/brands";
+  @import "./components/bannerCard/bannerCard";
 
-// Pages
-@import "./pages/home/home";
-@import "./pages/product/product";
-@import "./pages/shop/shop";
-@import "./pages/cart/cart";
+  // Pages
+  @import "./pages/home/home";
+  @import "./pages/product/product";
+  @import "./pages/shop/shop";
+  @import "./pages/cart/cart";
+}

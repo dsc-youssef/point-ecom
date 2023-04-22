@@ -13,11 +13,11 @@ interface WebsiteLayoutProps {
 
 const WebsiteLayout: FC<WebsiteLayoutProps> = ({ children }) => {
   return (
-    <>
+    <div className={`${process.env.website_prefix}`}>
       <Header />
       {children}
       <Footer />
-    </>
+    </div>
   )
 }
 

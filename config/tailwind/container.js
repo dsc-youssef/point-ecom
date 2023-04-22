@@ -7,7 +7,7 @@ const container = {
     "lg": '1176px',
     "xl": "1356px",
     "2xl": "1612px"
-  }
+  },
 }
 
 

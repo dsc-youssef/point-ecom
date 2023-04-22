@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-// tailwind.config.js
 
 // Custom Config
 const customColors = require('./config/tailwind/colors');
@@ -14,15 +13,13 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-
+    container: customContainer,
     extend: {
-      container: customContainer,
       colors: customColors,
       fontFamily: customFontFamily,
       fontSize: customFontSize
     },
+
   },
   plugins: [],
 }
-
-// all alone <3
