@@ -33,15 +33,17 @@ const Slider: FC<WebsiteHomeSliderProps> = ({ sliders }) => {
     <div className="slider">
       <div className="container">
         {
-          sliders?.map((slider, index: number) => (
-            <div className={`container slide ${currentIndex === index && "active"}`} key={index}>
-              <div className="slide-content">
-                <h1 className="title">{slider.before} <span className="font-bold">{slider.special}</span> {slider.after}</h1>
-                <button className="btn ">Find Out More</button>
+          sliders.length > 0 && (
+            sliders.map((slider, index: number) => (
+              <div className={`container slide ${currentIndex === index && "active"}`} key={index}>
+                <div className="slide-content">
+                  <h1 className="title">{slider.before} <span className="font-bold">{slider.special}</span> {slider.after}</h1>
+                  <button className="btn ">Find Out More</button>
+                </div>
+                <img className="slide-image" src={slider.image} alt="" />
               </div>
-              <img className="slide-image" src={slider.image} alt="" />
-            </div>
-          ))
+            ))
+          )
         }
       </div>
       <div className="slider-mover-buttons">
