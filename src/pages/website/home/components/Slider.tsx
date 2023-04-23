@@ -33,7 +33,7 @@ const Slider: FC<WebsiteHomeSliderProps> = ({ sliders }) => {
     <div className="slider">
       <div className="container">
         {
-          sliders.map((slider, index: number) => (
+          sliders?.map((slider, index: number) => (
             <div className={`container slide ${currentIndex === index && "active"}`} key={index}>
               <div className="slide-content">
                 <h1 className="title">{slider.before} <span className="font-bold">{slider.special}</span> {slider.after}</h1>
