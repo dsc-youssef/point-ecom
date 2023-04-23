@@ -33,7 +33,7 @@ const Slider: FC<WebsiteHomeSliderProps> = ({ sliders }) => {
     <div className="slider">
       <div className="container">
         {
-          sliders.length > 0 && (
+          typeof sliders === "object" && (
             sliders.map((slider, index: number) => (
               <div className={`container slide ${currentIndex === index && "active"}`} key={index}>
                 <div className="slide-content">
