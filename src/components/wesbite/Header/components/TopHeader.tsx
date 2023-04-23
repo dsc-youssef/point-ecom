@@ -35,15 +35,9 @@ const TopHeader: FC = () => {
             <i className="fab fa-youtube" />
           </div>
           <div className="placeholder-button">
-            <Link href="/shop" className="link-button">
-              <i className="fas fa-location-dot" />
-              Track Order
-            </Link>
-          </div>
-          <div className="placeholder-button">
-            <Link href="/shop" className="link-button">
-              <i className="fas fa-cog" />
-              Settings
+            <Link href="/" className="link-button">
+              <i className="fas fa-home" />
+              Home
             </Link>
           </div>
           <div className="placeholder-button">
@@ -54,6 +48,12 @@ const TopHeader: FC = () => {
           </div>
           <div className="placeholder-button">
             <Link href="/shop" className="link-button">
+              <i className="fas fa-cog" />
+              Settings
+            </Link>
+          </div>
+          <div className="placeholder-button">
+            <Link href="/faq" className="link-button">
               FAQ
             </Link>
           </div>

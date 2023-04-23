@@ -1,18 +1,18 @@
 .slider {
-  @apply relative flex items-center min-h-[700px] lg:min-h-[450px] bg-gradient-to-l from-success-100 to-warning-100 overflow-hidden py-0 lg:py-10;
+  @apply relative flex items-center min-h-[700px] lg:min-h-[450px] bg-gradient-to-l from-success-100 to-grey-100 overflow-hidden py-0 lg:py-10;
   
   >.container {
     @apply relative w-full min-h-[450px] z-10;
 
     .slide {
-      @apply absolute top-0 left-0 flex justify-center h-full gap-10 lg:gap-0 items-center w-full flex-col-reverse lg:flex-row transition-opacity duration-500 opacity-0 z-10;
+      @apply absolute top-0 left-0 flex justify-center h-full gap-10 lg:gap-0 2xl:gap-20 items-center w-full flex-col-reverse lg:flex-row transition-opacity duration-500 opacity-0 z-10;
 
       &.active {  
         @apply opacity-100 z-20;
       }
       
       .slide-image {
-        @apply w-full lg:w-[55%] h-full;
+        @apply w-full lg:w-[45%] h-full;
       }
 
       .slide-content {

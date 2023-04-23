@@ -1,5 +1,6 @@
 // Dependences
-import { FC, useEffect, useRef } from "react";
+import { FC } from "react";
+import Link from "next/link";
 
 // Components
 import SelectDropdown from "@/components/global/SelectDropdown";
@@ -45,7 +46,9 @@ const HeaderBody: FC = () => {
           <button className="fas fa-user"></button>
           <button className="fas fa-code-compare"></button>
           <button className="fas fa-heart"></button>
-          <button className="fas fa-bag-shopping"> $ <span>0.00</span></button>
+          <Link href="/cart">
+            <button className="fas fa-bag-shopping"> $ <span>0.00</span></button>
+          </Link>
         </div>
       </div>
     </div>

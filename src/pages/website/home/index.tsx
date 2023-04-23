@@ -2,7 +2,7 @@
 import { FC } from "react";
 
 // Components
-import Slider from "@/components/wesbite/Slider";
+import Slider from "./components/Slider";
 
 
 const Home: FC = () => {

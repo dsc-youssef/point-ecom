@@ -47,7 +47,7 @@ const Slider: FC<WebsiteHomeSliderProps> = ({ sliders }) => {
       <div className="slider-mover-buttons">
         {
           sliders.map((slider, index: number) => (
-            <span className={`button relative z-50 ${index === currentIndex && "active"}`} onClick={() => setCurrentIndex(index)}></span>
+            <span key={index} className={`button relative z-50 ${index === currentIndex && "active"}`} onClick={() => setCurrentIndex(index)}></span>
           ))
         }
       </div>
