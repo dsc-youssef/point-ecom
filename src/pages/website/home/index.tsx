@@ -3,6 +3,9 @@ import { FC } from "react";
 
 // Components
 import Slider from "./components/Slider";
+import FeatureCards from "./components/FeatureCards";
+import FeaturedProducts from "./components/FeaturedProducts";
+import CategoriesCards from "./components/Categories";
 
 
 const Home: FC = () => {
@@ -13,8 +16,11 @@ const Home: FC = () => {
   ];
 
   return (
-    <div className="home-page">
+    <div className="home-page w-full">
       <Slider sliders={sliders} />
+      <FeatureCards />
+      <FeaturedProducts />
+      <CategoriesCards />
     </div>
   )
 }
