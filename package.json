@@ -7,6 +7,7 @@
     "build": "tsc && next build",
     "start": "next start",
     "lint": "next lint",
+    "zip": "bash ./bin/zip.sh",
     "test": "vitest test",
     "test:ts": "tsc -w",
     "test:coverage": "vitest run --coverage",

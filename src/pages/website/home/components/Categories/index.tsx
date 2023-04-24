@@ -20,11 +20,9 @@ const CategoriesCards: FC = () => {
   return (
     <div className="bg-grey-100">
       <div className="container">
-        <div className="w-full inline-flex flex-col pt-[10px] pb-[60px] w-full">
-          <div className="mb-5">
-            <BlockTitle title="Categories" />
-          </div>
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 justify-center items-center">
+        <div className="categoryCards">
+          <BlockTitle title="Categories" />
+          <div className="categories">
             {
               categorys.map((category, index) => (
                 <CategoryCard key={index} category={category.category} image={category.image} />

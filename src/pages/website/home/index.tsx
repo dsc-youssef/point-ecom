@@ -6,6 +6,8 @@ import Slider from "./components/Slider";
 import FeatureCards from "./components/FeatureCards";
 import FeaturedProducts from "./components/FeaturedProducts";
 import CategoriesCards from "./components/Categories";
+import Bestsellers from "./components/Bestsellers";
+import BigDeals from "./components/BigDeals";
 
 
 const Home: FC = () => {
@@ -21,6 +23,8 @@ const Home: FC = () => {
       <FeatureCards />
       <FeaturedProducts />
       <CategoriesCards />
+      <Bestsellers />
+      <BigDeals />
     </div>
   )
 }

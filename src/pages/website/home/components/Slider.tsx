@@ -60,29 +60,3 @@ const Slider: FC<WebsiteHomeSliderProps> = ({ sliders }) => {
 };
 
 export default Slider;
-
-
-/**
- * 
-  {images.map((image, index) => (
-        <img
-          key={index}
-          src={image}
-          alt={`Slider Image ${index}`}
-          className={`absolute  top-0 left-0 h-full w-full  ${index === currentImageIndex ? "opacity-100" : "opacity-0"
-            }`}
-        />
-      ))}
-      <button
-        className="absolute top-1/2 left-2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full transform -translate-y-1/2 hover:bg-opacity-75 transition-colors duration-300"
-        onClick={previousImage}
-      >
-        {"<"}
-      </button>
-      <button
-        className="absolute top-1/2 right-2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full transform -translate-y-1/2 hover:bg-opacity-75 transition-colors duration-300"
-        onClick={nextImage}
-      >
-        {">"}
-      </button>
- */
